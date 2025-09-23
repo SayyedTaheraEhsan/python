@@ -1,9 +1,7 @@
 # Python program to check even or odd
-
-# take input from user
+# take input from a user
 num = int(input("Enter a number: "))
-
-# check condition
+# check condition it's even or odd
 if num % 2 == 0:
     print(num, "is Even")
 else:
