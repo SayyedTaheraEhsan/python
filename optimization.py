@@ -2,12 +2,10 @@
 """
 tahera_MS24xx_GA.py
 Traveling Salesman Problem solved by a Genetic Algorithm.
-
 - Reads cities from 'India_cities_GA.txt' (format: CityName x y per line)
 - Shows intermediate path tracing with city names
 - Plots average fitness (and best fitness) vs generations at the end
 - Saves intermediate path images (path_gen_0.png, path_gen_50.png, ...)
-
 Usage:
     python tahera_MS24xx_GA.py
 """
@@ -17,7 +15,6 @@ import math
 import matplotlib.pyplot as plt
 import os
 from typing import List, Tuple
-
 # -------------------------
 # Configuration / GA params
 # -------------------------
@@ -34,7 +31,7 @@ RANDOM_SEED = 42
 
 random.seed(RANDOM_SEED)
 
-# -------------------------
+# ----------------------
 # Utility / Data structures
 # -------------------------
 def read_cities(filename: str) -> List[Tuple[str, float, float]]:
